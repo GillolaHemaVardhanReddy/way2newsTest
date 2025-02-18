@@ -1,10 +1,11 @@
 import './App.css';
-
+import { RouterProvider } from 'react-router-dom';
+import { way2newsBrowser } from './Routes/routes';
 function App() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <RouterProvider router={way2newsBrowser}/>
+    </>
   );
 }
 

@@ -5,6 +5,12 @@
     width: 100%;
     height: 80vh;
 }
+button:disabled {
+    background-color: gray;  /* Make sure it's visibly disabled */
+    cursor: not-allowed;  /* Ensure the cursor changes */
+  }
+  
+
 .form{
     width: 70%;
     height: 70%;

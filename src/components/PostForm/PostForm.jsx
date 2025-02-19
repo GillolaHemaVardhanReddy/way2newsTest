@@ -1,16 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import './PostForm.css'
 
 const PostForm = () => {
     const navigate = useNavigate();
+    const [form, setForm] = useState({heading:"", news:"", image:""})
   return (
     <div className='form-container'>
         <div className='form'>
             <h1> Create Post</h1>
             <div className='input-box'>
                 <label>Heading</label>
-                <input type='text'className='input-def'/>
+                <input type='text'className='input-def' onClick={""}/>
             </div>
             <div className='input-box'>
                 <label>news</label>

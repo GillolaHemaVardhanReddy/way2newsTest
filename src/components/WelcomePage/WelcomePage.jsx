@@ -6,7 +6,7 @@ const WelcomePageme = () => {
     const navigate = useNavigate();
   return (
     <div className='welcome-image'>
-        <img src={welcomeposter}/>
+        <img alt='welcome poster' src={welcomeposter}/>
     </div>
   )
 }

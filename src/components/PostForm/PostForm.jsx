@@ -1,11 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import { useNavigate } from 'react-router-dom';
 import './PostForm.css'
 import { uploadFile } from '../../helper/uploadFile';
 import axios from 'axios';
 
 const PostForm = () => {
-    const navigate = useNavigate();
     const [form, setForm] = useState({heading:"", news:"", image:""})
     const [uploadError, setUploadError] = useState('');
     const [checkack, setCheckAck] = useState(0)

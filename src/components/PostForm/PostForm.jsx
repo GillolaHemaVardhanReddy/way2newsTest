@@ -10,7 +10,7 @@ const PostForm = () => {
     const [uploadError, setUploadError] = useState('');
     const [checkack, setCheckAck] = useState(0)
     const [ack, setAck] = useState('')
-    const base = process.env.BASE_URL || "http://localhost:8080" 
+    const base = process.env.BASE_URL || "https://way2newstestserver.onrender.com"
     const submitForm = async ()=>{
         const resp = await axios.post(`${base}/post/create`, form)
         if(resp.data.success){

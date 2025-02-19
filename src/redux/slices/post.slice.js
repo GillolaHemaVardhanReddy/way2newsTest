@@ -6,7 +6,8 @@ const initialState = {
     loading: false,
     error: ''
 };
-const base = process.env.BASE_URL || "http://localhost:8080" 
+const base = process.env.BASE_URL || "https://way2newstestserver.onrender.com"
+console.log(process.env)
 export const fetchPost = createAsyncThunk(
     'post/fetchpost',
     async (_, { dispatch, rejectWithValue })=>{

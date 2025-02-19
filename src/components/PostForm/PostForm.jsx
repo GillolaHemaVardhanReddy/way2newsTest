@@ -10,8 +10,9 @@ const PostForm = () => {
     const [uploadError, setUploadError] = useState('');
     const [checkack, setCheckAck] = useState(0)
     const [ack, setAck] = useState('')
+    const base = process.env.BASE_URL || "http://localhost:8080" 
     const submitForm = async ()=>{
-        const resp = await axios.post("http://localhost:8080/post/create", form)
+        const resp = await axios.post(`${base}/post/create`, form)
         if(resp.data.success){
             setAck(prev=> "created post successfully")
             setForm({heading:"", news:"", image:""})

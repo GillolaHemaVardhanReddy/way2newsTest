@@ -6,12 +6,12 @@ const initialState = {
     loading: false,
     error: ''
 };
-
+const base = process.env.BASE_URL || "http://localhost:8080" 
 export const fetchPost = createAsyncThunk(
     'post/fetchpost',
     async (_, { dispatch, rejectWithValue })=>{
       try{
-        const resp = await axios.get('http://localhost:8080/post/all')
+        const resp = await axios.get(`${base}/post/all`)
         if(resp.data.success){
           return resp.data.data
         }

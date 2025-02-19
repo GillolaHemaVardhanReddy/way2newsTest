@@ -13,7 +13,7 @@ function SinglePost({head, news, image}) {
             {news.length-1 < more && news.length>100 && <span className='show-more' onClick={()=>setMore(prev=> 100)}>show less</span>}
         </p>
         <div className='post-img-cont'>
-            <img className='post-image' src={image}/>
+            <img alt="post image" className='post-image' src={image}/>
         </div>
       </div>
     </div>

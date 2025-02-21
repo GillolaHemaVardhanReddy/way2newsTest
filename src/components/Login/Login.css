@@ -1,0 +1,75 @@
+/* Body styles */
+.login-page {
+    background-color: #f0a500; /* light orange */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Login box styles */
+  .login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .login-heading {
+    color: #f56d27; /* orange */
+    margin-bottom: 20px;
+  }
+  
+  /* Input group styling */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Label styles */
+  .input-label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Input field styles */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border-color: #f56d27; /* orange */
+  }
+  
+  /* Button styling */
+  .login-button {
+    background-color: #f56d27; /* orange */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #e55e16; /* darker orange */
+  }
+  
+  .sign-in-up {
+    color: rgb(144, 144, 250);
+    cursor: pointer;
+  }

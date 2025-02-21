@@ -13,7 +13,7 @@ const base = process.env.BASE_URL || "http://localhost:8081"
 export const fetchUser = createAsyncThunk('auth/fetchuser',async ({email,password},{ dispatch, rejectWithValue })=>{
     try{
         const resp = await axios.post(
-            `${base}/auth/signin`, 
+            `https://way2newstestserver.onrender.com/auth/signin`, 
             { email, password },
             { withCredentials: true }
         );
@@ -32,7 +32,7 @@ export const fetchUser = createAsyncThunk('auth/fetchuser',async ({email,passwor
 
 export const logOutAndClear = createAsyncThunk('auth/logoutandclear',async (_, { dispatch, rejectWithValue }) => {
   try {
-    const resp = await axios.get(`${base}/auth/signout`,{
+    const resp = await axios.get(`https://way2newstestserver.onrender.com/auth/signout`,{
       withCredentials: true,
     });
     console.log(resp.data)

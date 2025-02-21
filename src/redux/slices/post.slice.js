@@ -12,7 +12,7 @@ export const fetchPost = createAsyncThunk(
     'post/fetchpost',
     async (_, { dispatch, rejectWithValue })=>{
       try{
-        const resp = await axios.get(`${base}/post/all`)
+        const resp = await axios.get(`https://way2newstestserver.onrender.com/post/all`)
         if(resp.data.success){
           return resp.data.data
         }
